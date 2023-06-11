@@ -1,0 +1,31 @@
+{# convertisseur euro/dollar inverssement #}
+<div class="converter-body">
+
+        <center><h1 class ="converter-title">convertisseur EURO/DOLLARS</h1></center><br><br>
+        <center><input type="text" placeholder="Nombre à convertir" id="input">
+        <span> = </span>
+        <input type="text" placeholder="Nombre converti" id="result"></center>
+        
+
+        <select id="inputType">
+            <option value="euro">EURO</option>
+            <option value="dollars">DOLLARS</option>
+
+        </select>
+
+        <select id="resultType">
+            <option value="euro">EURO</option>
+            <option value="dollars">DOLLARS</option>
+        </select>
+
+    </div>
+{# convertisseur euro/dollar fin  #}
+
+{# video en fond d'image #}
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="{{ asset('css/annimation.mp4') }}" type="video/mp4">
+            
+        </video>
+    </div>
+{# fin video de fond d'image #}

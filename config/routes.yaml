@@ -1,3 +1,17 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+conver_ed:
+    path: /
+    controller: App\Controller\MainConsollerController::index
+
+conver_efs:
+    path: /converEFS
+    controller: App\Controller\MainConsollerController::converEFS 
+
+conver_fsd:
+    path: /converFSD
+    controller: App\Controller\MainConsollerController::converFSD
+
+

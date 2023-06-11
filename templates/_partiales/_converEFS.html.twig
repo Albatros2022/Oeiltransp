@@ -1,0 +1,45 @@
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>🚀</text></svg>">
+       
+
+{# convertisseur euro/dollar inverssement #}
+<div class="converter-body">
+
+        <center><h1 class ="converter-title">convertisseur EURO/FrancSuisse</h1></center><br><br>
+        <center><input type="text" placeholder="Nombre à convertir" id="input">
+        <span> = </span>
+        <input type="text" placeholder="Nombre converti" id="result"></center>
+        
+
+        <select id="inputType">
+            <option value="euro">EURO</option>
+            <option value="FS">FrancSuisse</option>
+
+        </select>
+
+        <select id="resultType">
+            <option value="euro">EURO</option>
+            <option value="FS">FrancSuisse</option>
+        </select>
+
+    </div>
+    {# video en fond d'image #}
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="{{ asset('css/annimation.mp4') }}" type="video/mp4">
+            
+        </video>
+    </div>
+{# fin video de fond d'image #}
+{# convertisseur euro/dollar fin  #}
+{% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/conver.css') }}">
+        {% endblock %}
+        
+        {# fichier javascript #}
+        {% block javascripts %}
+        <script src="{{ asset('js/script.js') }}"></script>   
+        {% endblock %}
+    {% include "_partiales/_nav.html.twig"%}
+
+    
